@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to build a 13-week cash flow forecast (step by step) — Nino Mihilli</title>
+<meta name="description" content="Nino Mihilli walks through building a 13-week cash flow forecast in a simple spreadsheet, with the exact rows, weekly routine, and mistakes to avoid." />
+<link rel="canonical" href="https://insights.ninomihilli.com/blog/13-week-cash-flow-forecast/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to build a 13-week cash flow forecast (step by step) — Nino Mihilli" />
+<meta property="og:description" content="Nino Mihilli walks through building a 13-week cash flow forecast in a simple spreadsheet, with the exact rows, weekly routine, and mistakes to avoid." />
+<meta property="og:url" content="https://insights.ninomihilli.com/blog/13-week-cash-flow-forecast/" />
+<meta property="og:site_name" content="Nino Mihilli" />
+<meta property="og:image" content="https://insights.ninomihilli.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://insights.ninomihilli.com/og-image.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="twitter:title" content="How to build a 13-week cash flow forecast (step by step) — Nino Mihilli" />
+<meta name="twitter:description" content="Nino Mihilli walks through building a 13-week cash flow forecast in a simple spreadsheet, with the exact rows, weekly routine, and mistakes to avoid." />
+<link rel="alternate" type="application/rss+xml" title="Nino Mihilli — Insights" href="https://insights.ninomihilli.com/rss.xml" />
+<style>:root{--bg:#08090D;--bg2:#0C0E14;--ink:#EDEEF2;--muted:#9CA0AD;--faint:#61656F;--line:#20232E;--card:rgba(255,255,255,.03);--accent:#5B7CFA;--accent2:#7B9CFF;--prose:#C9CCD6;--serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(900px 520px at 82% -12%, rgba(91,124,250,.16), transparent 62%),radial-gradient(760px 520px at -5% 8%, rgba(210,166,75,.06), transparent 58%);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(8,9,13,.78);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1120px;margin:0 auto;padding:0 26px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px;font-size:17px}
+.logo{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:15px;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;margin-top:2px}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{color:var(--muted);font-size:14.5px;font-weight:600;transition:color .15s}
+nav.links a:hover{color:var(--ink)}
+nav.links a.on{color:var(--ink)}
+nav.links a.btn,nav.links a.btn:hover{color:#ffffff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:700;font-size:14px;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);color:#ffffff;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+@media(max-width:760px){nav.links a:not(.btn){display:none}}
+.phead{padding:74px 0 34px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:18px;display:block}
+h1{font-family:var(--serif);font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.5px;margin-bottom:18px}
+.meta{color:var(--faint);font-size:13.5px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.meta .dot{opacity:.5}
+article{padding:38px 0 20px;font-size:17px}
+article p{margin-bottom:22px;color:var(--prose)}
+article h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,29px);font-weight:700;letter-spacing:-.3px;margin:42px 0 16px}
+article h3{font-size:19px;font-weight:800;margin:30px 0 12px}
+article ul,article ol{margin:0 0 22px 22px;color:var(--prose)}
+article li{margin-bottom:9px}
+article a{color:var(--accent2);border-bottom:1px solid var(--line)}
+article a:hover{border-bottom-color:var(--accent2)}
+article blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 22px;color:var(--muted);font-style:italic}
+article code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:14.5px}
+article hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+article strong{color:var(--ink)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 0}
+.tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:38px 0 0}
+.bio .av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA)}
+.bio b{font-size:15px}
+.bio p{color:var(--muted);font-size:14px;margin:5px 0 0}
+.bio a{color:var(--accent2)}
+.postlist{padding:14px 0 40px}
+.item{display:block;border-bottom:1px solid var(--line);padding:26px 0;transition:opacity .15s}
+.item:hover{opacity:.82}
+.item .d{font-size:12.5px;color:var(--faint);letter-spacing:.4px;margin-bottom:9px}
+.item h2{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.3px;margin-bottom:9px}
+.item p{color:var(--muted);font-size:15px}
+.item .more{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--accent2)}
+.cta{text-align:center;background:linear-gradient(180deg,rgba(91,124,250,.10),transparent);border:1px solid var(--line);border-radius:22px;padding:46px 28px;margin:46px 0}
+.cta h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,31px);font-weight:700;margin-bottom:11px}
+.cta p{color:var(--muted);max-width:52ch;margin:0 auto 22px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:32px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13.5px;max-width:1120px;margin:0 auto;padding:0 26px}
+.foot a{color:var(--muted)} .foot a:hover{color:var(--ink)}
+.backlink{display:inline-block;margin:26px 0 0;font-size:14px;color:var(--muted);font-weight:600}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How to build a 13-week cash flow forecast (step by step)", "description": "Nino Mihilli walks through building a 13-week cash flow forecast in a simple spreadsheet, with the exact rows, weekly routine, and mistakes to avoid.", "datePublished": "2026-10-16", "dateModified": "2026-10-16", "url": "https://insights.ninomihilli.com/blog/13-week-cash-flow-forecast/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://insights.ninomihilli.com/blog/13-week-cash-flow-forecast/"}, "author": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}, "publisher": {"@type": "Organization", "@id": "https://insights.ninomihilli.com/#org", "name": "Nino Mihilli", "url": "https://insights.ninomihilli.com/", "logo": "https://insights.ninomihilli.com/apple-touch-icon.png", "founder": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}}, "keywords": "Cash Flow, Forecasting, Financial Strategy", "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://insights.ninomihilli.com/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://insights.ninomihilli.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to build a 13-week cash flow forecast (step by step)", "item": "https://insights.ninomihilli.com/blog/13-week-cash-flow-forecast/"}]}]}</script>
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" href="https://www.ninomihilli.com/">
+    <div class="logo">NM</div>
+    <div>Nino Mihilli <small>Insights</small></div>
+  </a>
+  <nav class="links">
+    <a href="https://www.ninomihilli.com/">Home</a><a href="https://www.ninomihilli.com/#about">About</a><a href="https://www.ninomihilli.com/#ventures">Ventures</a><a href="https://www.ninomihilli.com/blog">Blog</a>
+    <a class="on" href="https://insights.ninomihilli.com/blog/">Insights</a>
+    <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a>
+  </nav>
+</div></header>
+<main>
+<div class="wrap phead">
+  <span class="kicker">Cash Flow</span>
+  <h1>How to build a 13-week cash flow forecast (step by step)</h1>
+  <div class="meta"><span>Nino Mihilli</span><span class="dot">·</span>
+  <time datetime="2026-10-16">October 16, 2026</time>
+  <span class="dot">·</span><span>5 min read</span></div>
+</div>
+<div class="wrap"><article><p>If I could get every owner to adopt one financial tool, it would be the 13-week cash flow forecast.</p>
+<p>Not the annual budget. Not a fancy dashboard. A plain spreadsheet that shows, week by week for the next quarter, how much cash comes in, how much goes out, and what the bank balance will be at the end of each week.</p>
+<p>Thirteen weeks is the right window for a reason. It is long enough to see a problem coming while you can still do something about it — collect faster, delay a purchase, talk to your bank. It is short enough that you can forecast it with real data instead of hopes.</p>
+<p>Here is how to build one.</p>
+<h2>Why the P&amp;L is not enough</h2>
+<p>Your profit and loss statement tells you whether you made money. It does not tell you whether you will have money.</p>
+<p>A service business can book a strong month and still miss payroll, because the revenue was invoiced and not collected. A business can show a loss and still have plenty of cash because a large customer prepaid. Profit is an opinion shaped by accounting rules. Cash is a fact.</p>
+<p>The 13-week forecast deals only in cash: dollars that actually hit or leave the bank account, in the week they move.</p>
+<h2>Step 1: Set up the columns</h2>
+<p>Open a spreadsheet. Across the top, create fourteen columns:</p>
+<ul><li><strong>Column A:</strong> row labels</li><li><strong>Columns B through N:</strong> Week 1 through Week 13, each labeled with the week-ending date</li></ul>
+<p>Pick one day the week ends — Friday works for most businesses — and keep it consistent.</p>
+<h2>Step 2: Set up the rows</h2>
+<p>Down the side, build three sections.</p>
+<p><strong>Beginning cash</strong></p>
+<ul><li>Opening bank balance (Week 1 is your actual balance today; every week after equals the prior week's ending balance)</li></ul>
+<p><strong>Cash receipts</strong></p>
+<ul><li>Collections from existing receivables (from your aging report)</li><li>Collections from new sales you expect to invoice and collect inside the window</li><li>Other receipts (deposits, refunds, asset sales)</li><li><strong>Total receipts</strong></li></ul>
+<p><strong>Cash disbursements</strong></p>
+<ul><li>Payroll and payroll taxes</li><li>Rent and occupancy</li><li>Key vendors and cost of goods</li><li>Debt payments</li><li>Insurance</li><li>Software and subscriptions</li><li>Owner distributions</li><li>Estimated tax payments (confirm timing and amounts with your CPA)</li><li>Capital purchases</li><li>Other</li><li><strong>Total disbursements</strong></li></ul>
+<p><strong>Ending cash</strong></p>
+<ul><li>Ending balance = beginning cash + total receipts - total disbursements</li><li>Minimum cash threshold (a fixed number you never want to go below)</li><li>Cushion = ending balance - minimum threshold</li></ul>
+<p>That last row is the one you will look at first every week.</p>
+<h2>Step 3: Forecast receipts from real data</h2>
+<p>This is where most forecasts go wrong. Owners forecast what customers <em>owe</em>, not what customers <em>pay</em>.</p>
+<p>Pull your accounts receivable aging and go customer by customer. If a customer reliably pays in forty-five days regardless of terms, forecast forty-five days. If an invoice is already ninety days past due, do not put it in Week 1 because you hope it lands. Put it where history says it lands, or leave it out.</p>
+<p>For new sales, be conservative. Only include work that is signed or nearly certain, and lag the cash by your real collection cycle.</p>
+<h2>Step 4: Forecast disbursements from the calendar</h2>
+<p>Disbursements are easier because you control most of them. Go through:</p>
+<ol><li>Your payroll calendar, including any week with an extra pay date</li><li>Recurring bills from your accounts payable system</li><li>Loan and lease payment schedules</li><li>Annual or quarterly items that are easy to forget — insurance renewals, software contracts, property taxes, estimated taxes</li><li>Any planned purchases or hires</li></ol>
+<p>If you are not sure about a number, round it up. A forecast that is wrong in the conservative direction rarely hurts anyone.</p>
+<h2>Step 5: Set your minimum cash threshold</h2>
+<p>Decide the lowest balance you are willing to carry. A common starting point is enough to cover one full payroll cycle plus a few weeks of fixed costs, but the right number depends on your business. The point is that it is written down, so a dip below it triggers action instead of discussion.</p>
+<h2>Step 6: Run it every week</h2>
+<p>The forecast is only useful if it is alive. Every week, on the same day:</p>
+<ol><li>Replace last week's forecast column with actuals</li><li>Note the biggest variances between forecast and actual, and why they happened</li><li>Drop the completed week and add a new Week 13</li><li>Update receipts based on the current aging report</li><li>Check the cushion row for every week ahead</li><li>Decide on actions for any week where the cushion goes negative</li></ol>
+<p>This takes about thirty minutes once the template is built. It is the most valuable half hour in the week.</p>
+<h2>Step 7: Act early when you see a gap</h2>
+<p>When the forecast shows a shortfall in Week 8, you have choices you would not have in Week 1:</p>
+<ul><li>Call slow-paying customers now, before the invoice becomes a problem</li><li>Offer a small discount for early payment on a large receivable</li><li>Move a non-essential purchase out a month</li><li>Ask a vendor for extended terms, while you are still a good customer</li><li>Draw on a line of credit you already have open</li><li>Talk to your banker about a temporary increase <em>before</em> you need it</li></ul>
+<p>Banks respond differently to "here is a forecast showing a seasonal gap in eight weeks and how we plan to cover it" than they do to "we need money Friday."</p>
+<h2>Mistakes I see most often</h2>
+<ul><li><strong>Mixing accrual and cash.</strong> If you pull numbers straight from the P&amp;L, you are not forecasting cash.</li><li><strong>Forgetting the lumpy items.</strong> Annual insurance premiums and quarterly taxes cause more surprises than anything else.</li><li><strong>Never comparing forecast to actual.</strong> The variance review is how the forecast gets more accurate over time.</li><li><strong>One person owns it in isolation.</strong> Sales and operations leaders should see it. They influence most of the numbers.</li><li><strong>Building it once.</strong> A forecast you made in March is not a forecast in June.</li></ul>
+<h2>Why I care about this</h2>
+<p>Cash surprises are hard on an owner, and harder on the people who depend on the business. A team should never wonder whether payroll will clear. Knowing your cash thirteen weeks out is one of the simplest ways to protect them, and it is the first thing I put in place when I work with an owner on <a href="https://www.ninomihilli.com">financial strategy</a>.</p>
+<p>If you want help building your first 13-week forecast or pressure-testing the one you have, <a href="https://calendly.com/ninomihilli">book an Executive Strategy Hour</a>.</p></article>
+<div class="tags"><span class="tag">Cash Flow</span><span class="tag">Forecasting</span><span class="tag">Financial Strategy</span></div>
+<div class="bio"><div class="av">NM</div>
+        <div><b>Nino Mihilli</b><p>Founder and operator from Phoenix, Arizona. Twenty years building and scaling businesses across staffing, telecom, insurance and software. Vice-Chairperson of the Salvation Army Kroc Center Phoenix advisory council. <a href="https://www.ninomihilli.com">www.ninomihilli.com</a></p></div></div>
+<div class="cta"><h2>Want a second set of eyes on your business?</h2><p>Book an Executive Strategy Hour: one focused hour on scaling, operations, cash flow, deals or technology, with written follow-up and action items.</p>
+      <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a></div>
+      <a class="backlink" href="https://insights.ninomihilli.com/blog/">← All insights</a></div>
+</main>
+<footer><div class="foot">
+  <div>© 2026 Nino Mihilli · T47 Group · Phoenix, AZ</div>
+  <div><a href="https://www.ninomihilli.com/">ninomihilli.com</a> · <a href="https://calendly.com/ninomihilli">Strategy Hour</a> · <a href="https://t47group.com/">T47 Group</a> · <a href="https://www.linkedin.com/in/ninomihilli/">LinkedIn</a></div>
+</div></footer>
+</body>
+</html>
