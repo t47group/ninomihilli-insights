@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to get real ROI from AI in a small business — Nino Mihilli</title>
+<meta name="description" content="A practical, no-hype approach to AI for small business owners: where it pays off, how to pick a first project, measure ROI, and avoid common mistakes." />
+<link rel="canonical" href="https://insights.ninomihilli.com/blog/ai-roi-small-business/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to get real ROI from AI in a small business — Nino Mihilli" />
+<meta property="og:description" content="A practical, no-hype approach to AI for small business owners: where it pays off, how to pick a first project, measure ROI, and avoid common mistakes." />
+<meta property="og:url" content="https://insights.ninomihilli.com/blog/ai-roi-small-business/" />
+<meta property="og:site_name" content="Nino Mihilli" />
+<meta property="og:image" content="https://insights.ninomihilli.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://insights.ninomihilli.com/og-image.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="twitter:title" content="How to get real ROI from AI in a small business — Nino Mihilli" />
+<meta name="twitter:description" content="A practical, no-hype approach to AI for small business owners: where it pays off, how to pick a first project, measure ROI, and avoid common mistakes." />
+<link rel="alternate" type="application/rss+xml" title="Nino Mihilli — Insights" href="https://insights.ninomihilli.com/rss.xml" />
+<style>:root{--bg:#08090D;--bg2:#0C0E14;--ink:#EDEEF2;--muted:#9CA0AD;--faint:#61656F;--line:#20232E;--card:rgba(255,255,255,.03);--accent:#5B7CFA;--accent2:#7B9CFF;--prose:#C9CCD6;--serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(900px 520px at 82% -12%, rgba(91,124,250,.16), transparent 62%),radial-gradient(760px 520px at -5% 8%, rgba(210,166,75,.06), transparent 58%);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(8,9,13,.78);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1120px;margin:0 auto;padding:0 26px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px;font-size:17px}
+.logo{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:15px;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;margin-top:2px}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{color:var(--muted);font-size:14.5px;font-weight:600;transition:color .15s}
+nav.links a:hover{color:var(--ink)}
+nav.links a.on{color:var(--ink)}
+nav.links a.btn,nav.links a.btn:hover{color:#ffffff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:700;font-size:14px;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);color:#ffffff;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+@media(max-width:760px){nav.links a:not(.btn){display:none}}
+.phead{padding:74px 0 34px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:18px;display:block}
+h1{font-family:var(--serif);font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.5px;margin-bottom:18px}
+.meta{color:var(--faint);font-size:13.5px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.meta .dot{opacity:.5}
+article{padding:38px 0 20px;font-size:17px}
+article p{margin-bottom:22px;color:var(--prose)}
+article h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,29px);font-weight:700;letter-spacing:-.3px;margin:42px 0 16px}
+article h3{font-size:19px;font-weight:800;margin:30px 0 12px}
+article ul,article ol{margin:0 0 22px 22px;color:var(--prose)}
+article li{margin-bottom:9px}
+article a{color:var(--accent2);border-bottom:1px solid var(--line)}
+article a:hover{border-bottom-color:var(--accent2)}
+article blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 22px;color:var(--muted);font-style:italic}
+article code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:14.5px}
+article hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+article strong{color:var(--ink)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 0}
+.tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:38px 0 0}
+.bio .av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA)}
+.bio b{font-size:15px}
+.bio p{color:var(--muted);font-size:14px;margin:5px 0 0}
+.bio a{color:var(--accent2)}
+.postlist{padding:14px 0 40px}
+.item{display:block;border-bottom:1px solid var(--line);padding:26px 0;transition:opacity .15s}
+.item:hover{opacity:.82}
+.item .d{font-size:12.5px;color:var(--faint);letter-spacing:.4px;margin-bottom:9px}
+.item h2{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.3px;margin-bottom:9px}
+.item p{color:var(--muted);font-size:15px}
+.item .more{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--accent2)}
+.cta{text-align:center;background:linear-gradient(180deg,rgba(91,124,250,.10),transparent);border:1px solid var(--line);border-radius:22px;padding:46px 28px;margin:46px 0}
+.cta h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,31px);font-weight:700;margin-bottom:11px}
+.cta p{color:var(--muted);max-width:52ch;margin:0 auto 22px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:32px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13.5px;max-width:1120px;margin:0 auto;padding:0 26px}
+.foot a{color:var(--muted)} .foot a:hover{color:var(--ink)}
+.backlink{display:inline-block;margin:26px 0 0;font-size:14px;color:var(--muted);font-weight:600}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How to get real ROI from AI in a small business", "description": "A practical, no-hype approach to AI for small business owners: where it pays off, how to pick a first project, measure ROI, and avoid common mistakes.", "datePublished": "2026-10-28", "dateModified": "2026-10-28", "url": "https://insights.ninomihilli.com/blog/ai-roi-small-business/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://insights.ninomihilli.com/blog/ai-roi-small-business/"}, "author": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}, "publisher": {"@type": "Organization", "@id": "https://insights.ninomihilli.com/#org", "name": "Nino Mihilli", "url": "https://insights.ninomihilli.com/", "logo": "https://insights.ninomihilli.com/apple-touch-icon.png", "founder": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}}, "keywords": "AI, Technology, Operations", "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://insights.ninomihilli.com/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://insights.ninomihilli.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to get real ROI from AI in a small business", "item": "https://insights.ninomihilli.com/blog/ai-roi-small-business/"}]}]}</script>
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" href="https://www.ninomihilli.com/">
+    <div class="logo">NM</div>
+    <div>Nino Mihilli <small>Insights</small></div>
+  </a>
+  <nav class="links">
+    <a href="https://www.ninomihilli.com/">Home</a><a href="https://www.ninomihilli.com/#about">About</a><a href="https://www.ninomihilli.com/#ventures">Ventures</a><a href="https://www.ninomihilli.com/blog">Blog</a>
+    <a class="on" href="https://insights.ninomihilli.com/blog/">Insights</a>
+    <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a>
+  </nav>
+</div></header>
+<main>
+<div class="wrap phead">
+  <span class="kicker">Technology</span>
+  <h1>How to get real ROI from AI in a small business</h1>
+  <div class="meta"><span>Nino Mihilli</span><span class="dot">·</span>
+  <time datetime="2026-10-28">October 28, 2026</time>
+  <span class="dot">·</span><span>4 min read</span></div>
+</div>
+<div class="wrap"><article><p>Most small business owners I talk to about AI fall into one of two groups.</p>
+<p>The first group has tried a chatbot, found it interesting, and has no idea how it would change their business. The second group has been pitched by a dozen vendors promising to transform everything, and they are skeptical, with good reason.</p>
+<p>Both groups are missing the same thing: a way to treat AI like any other operating investment. You would not buy a new truck or hire a new manager without knowing what problem it solves and how you will measure the result. AI deserves the same discipline.</p>
+<p>Here is the approach I use.</p>
+<h2>Start with the work, not the tool</h2>
+<p>The wrong first question is "what can AI do?" It can do a lot, and that is the problem. You end up with a solution looking for a problem.</p>
+<p>The right first question is: <strong>where does my team spend time on repetitive work that involves reading, writing, sorting, or summarizing?</strong></p>
+<p>That category is where today's AI tools tend to be most useful. Examples in a typical service or operations business:</p>
+<ul><li>Drafting first versions of proposals, quotes, and routine customer emails</li><li>Summarizing long documents, contracts, or meeting notes</li><li>Answering common internal questions from your own policies and procedures</li><li>Sorting and routing inbound requests, applications, or support tickets</li><li>Extracting data from invoices, forms, or PDFs into your systems</li><li>Turning raw notes into job descriptions, training materials, or reports</li></ul>
+<p>Notice that every one of these has a human reviewing the output. That is deliberate.</p>
+<h2>Map the time before you buy anything</h2>
+<p>Before evaluating any tool, take one week and measure:</p>
+<ol><li><strong>The task.</strong> What exactly is being done?</li><li><strong>Who does it.</strong> Role and approximate hourly cost.</li><li><strong>How often.</strong> Times per week.</li><li><strong>How long.</strong> Minutes per instance.</li><li><strong>Error cost.</strong> What happens if it is done wrong?</li></ol>
+<p>Multiply frequency by time by cost and you have a weekly dollar figure for each task. Sort the list. The best first AI projects are near the top of that list <em>and</em> low on error cost.</p>
+<p>A task that consumes many hours but carries real risk — anything involving legal commitments, money movement, or safety — can still benefit, but it needs stronger human review and should not be your first project.</p>
+<h2>Pick one project and run a 30-day pilot</h2>
+<p>Resist the urge to roll out AI everywhere at once. Pick one workflow and run a focused pilot.</p>
+<p><strong>Week 1: Baseline.</strong> Measure the current process. Time per task, volume, error rate.</p>
+<p><strong>Week 2: Set up.</strong> Configure the tool, write clear instructions or templates, and train the two or three people who will use it.</p>
+<p><strong>Weeks 3–4: Run it.</strong> Use the new process on real work. Track the same measures as the baseline. Keep a simple log of where the AI helped, where it needed heavy correction, and where it got things wrong.</p>
+<p><strong>End of pilot: Decide.</strong> Compare results to baseline and decide whether to expand, adjust, or stop.</p>
+<h2>How to calculate ROI</h2>
+<p>Keep it simple:</p>
+<blockquote><p><strong>Monthly value</strong> = hours saved × loaded hourly cost + measurable gains (faster response, fewer errors, more capacity)</p></blockquote>
+<blockquote><p><strong>Monthly cost</strong> = subscriptions + implementation time + review time + training</p></blockquote>
+<p>Two things owners often leave out:</p>
+<ul><li><strong>Review time.</strong> If the AI drafts a proposal in two minutes but someone spends twenty minutes fixing it, your savings are smaller than they look.</li><li><strong>What the saved time becomes.</strong> Hours saved are only valuable if they turn into something: more customers served, faster follow-up, or overtime that no longer gets paid. If saved time simply disappears, the ROI is theoretical.</li></ul>
+<h2>Guardrails before you scale</h2>
+<p>Before expanding past a pilot, put basic rules in writing:</p>
+<ul><li><strong>Data.</strong> What information can and cannot go into AI tools. Customer data, employee records, and financial details need clear rules. Review vendor terms on how your data is stored and used, and involve your attorney for anything sensitive or regulated.</li><li><strong>Review.</strong> Which outputs require human approval before they reach a customer.</li><li><strong>Accountability.</strong> The person who sends the work owns the work, regardless of who or what drafted it.</li><li><strong>Disclosure.</strong> When and how you tell customers that AI was involved, consistent with your industry's expectations and any applicable rules.</li><li><strong>Accuracy.</strong> AI tools can produce confident, wrong answers. Facts, figures, and citations need to be checked.</li></ul>
+<h2>Mistakes to avoid</h2>
+<ul><li><strong>Buying a platform before defining a problem.</strong> Many tasks can be piloted with tools you may already pay for.</li><li><strong>Automating a broken process.</strong> If the workflow is messy, AI will produce messy results faster. Fix the process first.</li><li><strong>Skipping the people side.</strong> Teams adopt tools they helped shape. Involve the people who do the work.</li><li><strong>Expecting zero errors.</strong> Plan for review. The goal is less effort, not no oversight.</li><li><strong>Treating it as a one-time project.</strong> Tools change quickly. Review your AI workflows every quarter.</li></ul>
+<h2>A first-project checklist</h2>
+<ol><li>List the ten most repetitive reading or writing tasks in your business</li><li>Estimate weekly hours and cost for each</li><li>Rate each by error risk: low, medium, high</li><li>Choose the highest-cost, lowest-risk task</li><li>Set baseline measures</li><li>Run a 30-day pilot with a small group</li><li>Calculate ROI including review time</li><li>Write data and review guardrails</li><li>Expand, adjust, or stop</li><li>Choose the next project</li></ol>
+<h2>The real goal</h2>
+<p>AI is a tool for giving your people time back for the work only people can do: building relationships, solving hard problems, caring for customers. Used that way, it strengthens a team instead of replacing it. That is how we approach it in the software work we do at <a href="https://xsatorilabs.net">Xsatori Labs</a>.</p>
+<p>If you want help identifying your best first AI project and building the business case, <a href="https://calendly.com/ninomihilli">book an Executive Strategy Hour</a>.</p></article>
+<div class="tags"><span class="tag">AI</span><span class="tag">Technology</span><span class="tag">Operations</span></div>
+<div class="bio"><div class="av">NM</div>
+        <div><b>Nino Mihilli</b><p>Founder and operator from Phoenix, Arizona. Twenty years building and scaling businesses across staffing, telecom, insurance and software. Vice-Chairperson of the Salvation Army Kroc Center Phoenix advisory council. <a href="https://www.ninomihilli.com">www.ninomihilli.com</a></p></div></div>
+<div class="cta"><h2>Want a second set of eyes on your business?</h2><p>Book an Executive Strategy Hour: one focused hour on scaling, operations, cash flow, deals or technology, with written follow-up and action items.</p>
+      <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a></div>
+      <a class="backlink" href="https://insights.ninomihilli.com/blog/">← All insights</a></div>
+</main>
+<footer><div class="foot">
+  <div>© 2026 Nino Mihilli · T47 Group · Phoenix, AZ</div>
+  <div><a href="https://www.ninomihilli.com/">ninomihilli.com</a> · <a href="https://calendly.com/ninomihilli">Strategy Hour</a> · <a href="https://t47group.com/">T47 Group</a> · <a href="https://www.linkedin.com/in/ninomihilli/">LinkedIn</a></div>
+</div></footer>
+</body>
+</html>
