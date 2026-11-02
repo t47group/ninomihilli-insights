@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Scaling from $1M to $5M: what breaks and how to fix it first — Nino Mihilli</title>
+<meta name="description" content="Scaling a small business from $1M to $5M in revenue: the six things that usually break, the warning signs, and what to build before they do." />
+<link rel="canonical" href="https://insights.ninomihilli.com/blog/scaling-from-1m-to-5m/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Scaling from $1M to $5M: what breaks and how to fix it first — Nino Mihilli" />
+<meta property="og:description" content="Scaling a small business from $1M to $5M in revenue: the six things that usually break, the warning signs, and what to build before they do." />
+<meta property="og:url" content="https://insights.ninomihilli.com/blog/scaling-from-1m-to-5m/" />
+<meta property="og:site_name" content="Nino Mihilli" />
+<meta property="og:image" content="https://insights.ninomihilli.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://insights.ninomihilli.com/og-image.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="twitter:title" content="Scaling from $1M to $5M: what breaks and how to fix it first — Nino Mihilli" />
+<meta name="twitter:description" content="Scaling a small business from $1M to $5M in revenue: the six things that usually break, the warning signs, and what to build before they do." />
+<link rel="alternate" type="application/rss+xml" title="Nino Mihilli — Insights" href="https://insights.ninomihilli.com/rss.xml" />
+<style>:root{--bg:#08090D;--bg2:#0C0E14;--ink:#EDEEF2;--muted:#9CA0AD;--faint:#61656F;--line:#20232E;--card:rgba(255,255,255,.03);--accent:#5B7CFA;--accent2:#7B9CFF;--prose:#C9CCD6;--serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(900px 520px at 82% -12%, rgba(91,124,250,.16), transparent 62%),radial-gradient(760px 520px at -5% 8%, rgba(210,166,75,.06), transparent 58%);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(8,9,13,.78);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1120px;margin:0 auto;padding:0 26px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px;font-size:17px}
+.logo{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:15px;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;margin-top:2px}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{color:var(--muted);font-size:14.5px;font-weight:600;transition:color .15s}
+nav.links a:hover{color:var(--ink)}
+nav.links a.on{color:var(--ink)}
+nav.links a.btn,nav.links a.btn:hover{color:#ffffff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:700;font-size:14px;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);color:#ffffff;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+@media(max-width:760px){nav.links a:not(.btn){display:none}}
+.phead{padding:74px 0 34px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:18px;display:block}
+h1{font-family:var(--serif);font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.5px;margin-bottom:18px}
+.meta{color:var(--faint);font-size:13.5px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.meta .dot{opacity:.5}
+article{padding:38px 0 20px;font-size:17px}
+article p{margin-bottom:22px;color:var(--prose)}
+article h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,29px);font-weight:700;letter-spacing:-.3px;margin:42px 0 16px}
+article h3{font-size:19px;font-weight:800;margin:30px 0 12px}
+article ul,article ol{margin:0 0 22px 22px;color:var(--prose)}
+article li{margin-bottom:9px}
+article a{color:var(--accent2);border-bottom:1px solid var(--line)}
+article a:hover{border-bottom-color:var(--accent2)}
+article blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 22px;color:var(--muted);font-style:italic}
+article code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:14.5px}
+article hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+article strong{color:var(--ink)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 0}
+.tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:38px 0 0}
+.bio .av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA)}
+.bio b{font-size:15px}
+.bio p{color:var(--muted);font-size:14px;margin:5px 0 0}
+.bio a{color:var(--accent2)}
+.postlist{padding:14px 0 40px}
+.item{display:block;border-bottom:1px solid var(--line);padding:26px 0;transition:opacity .15s}
+.item:hover{opacity:.82}
+.item .d{font-size:12.5px;color:var(--faint);letter-spacing:.4px;margin-bottom:9px}
+.item h2{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.3px;margin-bottom:9px}
+.item p{color:var(--muted);font-size:15px}
+.item .more{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--accent2)}
+.cta{text-align:center;background:linear-gradient(180deg,rgba(91,124,250,.10),transparent);border:1px solid var(--line);border-radius:22px;padding:46px 28px;margin:46px 0}
+.cta h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,31px);font-weight:700;margin-bottom:11px}
+.cta p{color:var(--muted);max-width:52ch;margin:0 auto 22px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:32px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13.5px;max-width:1120px;margin:0 auto;padding:0 26px}
+.foot a{color:var(--muted)} .foot a:hover{color:var(--ink)}
+.backlink{display:inline-block;margin:26px 0 0;font-size:14px;color:var(--muted);font-weight:600}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "Scaling from $1M to $5M: what breaks and how to fix it first", "description": "Scaling a small business from $1M to $5M in revenue: the six things that usually break, the warning signs, and what to build before they do.", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "url": "https://insights.ninomihilli.com/blog/scaling-from-1m-to-5m/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://insights.ninomihilli.com/blog/scaling-from-1m-to-5m/"}, "author": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}, "publisher": {"@type": "Organization", "@id": "https://insights.ninomihilli.com/#org", "name": "Nino Mihilli", "url": "https://insights.ninomihilli.com/", "logo": "https://insights.ninomihilli.com/apple-touch-icon.png", "founder": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}}, "keywords": "Scaling, Growth, Operations", "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://insights.ninomihilli.com/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://insights.ninomihilli.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Scaling from $1M to $5M: what breaks and how to fix it first", "item": "https://insights.ninomihilli.com/blog/scaling-from-1m-to-5m/"}]}]}</script>
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" href="https://www.ninomihilli.com/">
+    <div class="logo">NM</div>
+    <div>Nino Mihilli <small>Insights</small></div>
+  </a>
+  <nav class="links">
+    <a href="https://www.ninomihilli.com/">Home</a><a href="https://www.ninomihilli.com/#about">About</a><a href="https://www.ninomihilli.com/#ventures">Ventures</a><a href="https://www.ninomihilli.com/blog">Blog</a>
+    <a class="on" href="https://insights.ninomihilli.com/blog/">Insights</a>
+    <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a>
+  </nav>
+</div></header>
+<main>
+<div class="wrap phead">
+  <span class="kicker">Scaling</span>
+  <h1>Scaling from $1M to $5M: what breaks and how to fix it first</h1>
+  <div class="meta"><span>Nino Mihilli</span><span class="dot">·</span>
+  <time datetime="2026-11-02">November 2, 2026</time>
+  <span class="dot">·</span><span>5 min read</span></div>
+</div>
+<div class="wrap"><article><p>Getting a business to its first million in revenue is mostly about the owner. Hustle, sales, relationships, long nights. The owner is the business, and that works for a while.</p>
+<p>Getting from there to five million is a different game. The skills that built the first stage start working against you. Things that held together because you personally touched everything start to crack, usually several at once, and usually during your best growth months.</p>
+<p>None of this is a sign that something is wrong with you or your business. It is a sign of the stage. The owners who navigate it well are the ones who see the breaks coming and build ahead of them.</p>
+<p>Here is what tends to break, in roughly the order I see it.</p>
+<h2>1. The owner becomes the bottleneck</h2>
+<p>At the first stage, every decision runs through you, and that is efficient. At the next stage, every decision still runs through you, and now there are five times as many.</p>
+<p><strong>Warning signs:</strong> Your team waits for you to approve routine decisions. Work stalls when you travel. You are the only person who can quote a job, resolve a customer issue, or approve a purchase. Your calendar is full of other people's problems.</p>
+<p><strong>What to build:</strong> Written decision rights. For every recurring decision, define who makes it and up to what limit. A supervisor can approve purchases up to a set amount. A project lead can resolve complaints up to a set credit. Write it down and stop overriding it.</p>
+<h2>2. Informal processes stop scaling</h2>
+<p>Early on, everyone knows how things work because everyone learned it from you, in person. As you hire faster, the knowledge gets diluted. New people learn from people who learned from people who learned from you.</p>
+<p><strong>Warning signs:</strong> The same mistakes repeat. Quality varies depending on who did the work. Training a new hire takes weeks of shadowing because nothing is written down.</p>
+<p><strong>What to build:</strong> Simple documentation for your ten most important processes. Not a binder nobody reads — short checklists and screen recordings, stored where people actually look. Start with the processes that touch customers and cash.</p>
+<h2>3. Financial visibility falls behind</h2>
+<p>A million-dollar business can often get by with a bookkeeper and an annual visit to the CPA. A five-million-dollar business cannot. The stakes per decision are higher, the cash cycles are larger, and mistakes compound faster.</p>
+<p><strong>Warning signs:</strong> You cannot tell which customers or services are profitable. You are surprised by cash shortfalls. Monthly financials arrive late or not at all. Growth months feel tighter than slow months.</p>
+<p><strong>What to build:</strong> A timely monthly close, a rolling 13-week cash forecast, gross margin by service line or customer, and a short weekly KPI review. At this stage, many owners benefit from fractional financial leadership.</p>
+<h2>4. The first management layer is missing or untrained</h2>
+<p>Most growing businesses promote their best individual performers into supervisor roles. It is a natural move and often the right one, but being excellent at the work and being good at leading people who do the work are different skills.</p>
+<p><strong>Warning signs:</strong> Turnover rises in specific teams. Supervisors are still doing the frontline work instead of managing. Problems escalate to you that should have been handled a level below.</p>
+<p><strong>What to build:</strong> Clear expectations for every manager: what they own, what they measure, and how often they meet with their team. Basic management training. A weekly one-on-one between you and each direct report.</p>
+<h2>5. Systems and tools get patched instead of chosen</h2>
+<p>At the early stage, a few spreadsheets and a basic accounting package work fine. As you grow, people add tools to solve individual problems, and you end up with data spread across a dozen places that do not talk to each other.</p>
+<p><strong>Warning signs:</strong> The same information gets entered in multiple places. Nobody trusts the numbers in any single system. Reports require someone to manually combine exports every week.</p>
+<p><strong>What to build:</strong> A deliberate review of your core systems: accounting, customer management, scheduling or operations, and payroll. Decide which system is the source of truth for each type of data. Consolidate where you can. If you need custom software, start with the workflow, not the features — this is the kind of work we do at <a href="https://xsatorilabs.net">Xsatori Labs</a>.</p>
+<h2>6. Culture stops transmitting automatically</h2>
+<p>When a company is small, culture happens by proximity. People see how the owner treats customers, handles mistakes, and talks about the team. At larger scale, many employees rarely interact with the owner at all.</p>
+<p><strong>Warning signs:</strong> New hires do not know what the company stands for. Standards vary by location or shift. You hear about behavior that would never have happened when you were in the room.</p>
+<p><strong>What to build:</strong> Write down your values in plain language, with examples of what they look like in practice. Hire and review against them. Create rhythms that bring people together: team meetings, recognition, shared events, service projects. These are not extras. They are how a company stays itself as it grows.</p>
+<h2>A pre-growth readiness checklist</h2>
+<p>Before pushing hard for the next stage of growth, check where you stand:</p>
+<ul><li>Decision rights written for the ten most common decisions</li><li>Top ten processes documented in short, usable form</li><li>Monthly financials closed within two weeks</li><li>A 13-week cash forecast updated weekly</li><li>Gross margin known by customer or service line</li><li>Weekly KPI review running with managers owning their numbers</li><li>Every manager has a written role and a weekly one-on-one</li><li>Core systems identified, with one source of truth for customers, jobs, and money</li><li>Values written down and used in hiring and reviews</li><li>Owner calendar has at least a few hours a week reserved for work on the business, not in it</li></ul>
+<p>If more than three of these are missing, growth will probably expose them. Better to fix them now, deliberately, than in the middle of a busy season.</p>
+<h2>The owner's job changes</h2>
+<p>The hardest part of this stage is personal. The owner has to move from doing the work to building the system that does the work. That means letting go of tasks you are good at and enjoy. It means accepting that other people will do things differently than you would.</p>
+<p>I have come to see that shift as an act of stewardship. A business that depends entirely on one person is fragile, and the people who work there carry that fragility with them. A business built on clear roles, real numbers, and shared values can serve its team and its customers well beyond the founder's personal capacity.</p>
+<p>If you are in the middle of this stage and want help deciding what to fix first, <a href="https://calendly.com/ninomihilli">book an Executive Strategy Hour</a>.</p></article>
+<div class="tags"><span class="tag">Scaling</span><span class="tag">Growth</span><span class="tag">Operations</span></div>
+<div class="bio"><div class="av">NM</div>
+        <div><b>Nino Mihilli</b><p>Founder and operator from Phoenix, Arizona. Twenty years building and scaling businesses across staffing, telecom, insurance and software. Vice-Chairperson of the Salvation Army Kroc Center Phoenix advisory council. <a href="https://www.ninomihilli.com">www.ninomihilli.com</a></p></div></div>
+<div class="cta"><h2>Want a second set of eyes on your business?</h2><p>Book an Executive Strategy Hour: one focused hour on scaling, operations, cash flow, deals or technology, with written follow-up and action items.</p>
+      <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a></div>
+      <a class="backlink" href="https://insights.ninomihilli.com/blog/">← All insights</a></div>
+</main>
+<footer><div class="foot">
+  <div>© 2026 Nino Mihilli · T47 Group · Phoenix, AZ</div>
+  <div><a href="https://www.ninomihilli.com/">ninomihilli.com</a> · <a href="https://calendly.com/ninomihilli">Strategy Hour</a> · <a href="https://t47group.com/">T47 Group</a> · <a href="https://www.linkedin.com/in/ninomihilli/">LinkedIn</a></div>
+</div></footer>
+</body>
+</html>
