@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to build a collections system that gets you paid on time — Nino Mihilli</title>
+<meta name="description" content="A step-by-step accounts receivable collections system for small businesses: clear terms, a weekly aging review, a follow-up cadence, and when to stop working for free." />
+<link rel="canonical" href="https://insights.ninomihilli.com/blog/accounts-receivable-collections-system/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to build a collections system that gets you paid on time — Nino Mihilli" />
+<meta property="og:description" content="A step-by-step accounts receivable collections system for small businesses: clear terms, a weekly aging review, a follow-up cadence, and when to stop working for free." />
+<meta property="og:url" content="https://insights.ninomihilli.com/blog/accounts-receivable-collections-system/" />
+<meta property="og:site_name" content="Nino Mihilli" />
+<meta property="og:image" content="https://insights.ninomihilli.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://insights.ninomihilli.com/og-image.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="twitter:title" content="How to build a collections system that gets you paid on time — Nino Mihilli" />
+<meta name="twitter:description" content="A step-by-step accounts receivable collections system for small businesses: clear terms, a weekly aging review, a follow-up cadence, and when to stop working for free." />
+<link rel="alternate" type="application/rss+xml" title="Nino Mihilli — Insights" href="https://insights.ninomihilli.com/rss.xml" />
+<style>:root{--bg:#08090D;--bg2:#0C0E14;--ink:#EDEEF2;--muted:#9CA0AD;--faint:#61656F;--line:#20232E;--card:rgba(255,255,255,.03);--accent:#5B7CFA;--accent2:#7B9CFF;--prose:#C9CCD6;--serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(900px 520px at 82% -12%, rgba(91,124,250,.16), transparent 62%),radial-gradient(760px 520px at -5% 8%, rgba(210,166,75,.06), transparent 58%);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(8,9,13,.78);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1120px;margin:0 auto;padding:0 26px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px;font-size:17px}
+.logo{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:15px;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;margin-top:2px}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{color:var(--muted);font-size:14.5px;font-weight:600;transition:color .15s}
+nav.links a:hover{color:var(--ink)}
+nav.links a.on{color:var(--ink)}
+nav.links a.btn,nav.links a.btn:hover{color:#ffffff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:700;font-size:14px;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);color:#ffffff;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+@media(max-width:760px){nav.links a:not(.btn){display:none}}
+.phead{padding:74px 0 34px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:18px;display:block}
+h1{font-family:var(--serif);font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.5px;margin-bottom:18px}
+.meta{color:var(--faint);font-size:13.5px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.meta .dot{opacity:.5}
+article{padding:38px 0 20px;font-size:17px}
+article p{margin-bottom:22px;color:var(--prose)}
+article h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,29px);font-weight:700;letter-spacing:-.3px;margin:42px 0 16px}
+article h3{font-size:19px;font-weight:800;margin:30px 0 12px}
+article ul,article ol{margin:0 0 22px 22px;color:var(--prose)}
+article li{margin-bottom:9px}
+article a{color:var(--accent2);border-bottom:1px solid var(--line)}
+article a:hover{border-bottom-color:var(--accent2)}
+article blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 22px;color:var(--muted);font-style:italic}
+article code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:14.5px}
+article hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+article strong{color:var(--ink)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 0}
+.tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:38px 0 0}
+.bio .av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA)}
+.bio b{font-size:15px}
+.bio p{color:var(--muted);font-size:14px;margin:5px 0 0}
+.bio a{color:var(--accent2)}
+.postlist{padding:14px 0 40px}
+.item{display:block;border-bottom:1px solid var(--line);padding:26px 0;transition:opacity .15s}
+.item:hover{opacity:.82}
+.item .d{font-size:12.5px;color:var(--faint);letter-spacing:.4px;margin-bottom:9px}
+.item h2{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.3px;margin-bottom:9px}
+.item p{color:var(--muted);font-size:15px}
+.item .more{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--accent2)}
+.cta{text-align:center;background:linear-gradient(180deg,rgba(91,124,250,.10),transparent);border:1px solid var(--line);border-radius:22px;padding:46px 28px;margin:46px 0}
+.cta h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,31px);font-weight:700;margin-bottom:11px}
+.cta p{color:var(--muted);max-width:52ch;margin:0 auto 22px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:32px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13.5px;max-width:1120px;margin:0 auto;padding:0 26px}
+.foot a{color:var(--muted)} .foot a:hover{color:var(--ink)}
+.backlink{display:inline-block;margin:26px 0 0;font-size:14px;color:var(--muted);font-weight:600}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How to build a collections system that gets you paid on time", "description": "A step-by-step accounts receivable collections system for small businesses: clear terms, a weekly aging review, a follow-up cadence, and when to stop working for free.", "datePublished": "2026-11-13", "dateModified": "2026-11-13", "url": "https://insights.ninomihilli.com/blog/accounts-receivable-collections-system/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://insights.ninomihilli.com/blog/accounts-receivable-collections-system/"}, "author": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}, "publisher": {"@type": "Organization", "@id": "https://insights.ninomihilli.com/#org", "name": "Nino Mihilli", "url": "https://insights.ninomihilli.com/", "logo": "https://insights.ninomihilli.com/apple-touch-icon.png", "founder": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}}, "keywords": "Accounts Receivable, Cash Flow, Operations", "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://insights.ninomihilli.com/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://insights.ninomihilli.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to build a collections system that gets you paid on time", "item": "https://insights.ninomihilli.com/blog/accounts-receivable-collections-system/"}]}]}</script>
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" href="https://www.ninomihilli.com/">
+    <div class="logo">NM</div>
+    <div>Nino Mihilli <small>Insights</small></div>
+  </a>
+  <nav class="links">
+    <a href="https://www.ninomihilli.com/">Home</a><a href="https://www.ninomihilli.com/#about">About</a><a href="https://www.ninomihilli.com/#ventures">Ventures</a><a href="https://www.ninomihilli.com/blog">Blog</a>
+    <a class="on" href="https://insights.ninomihilli.com/blog/">Insights</a>
+    <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a>
+  </nav>
+</div></header>
+<main>
+<div class="wrap phead">
+  <span class="kicker">Collections</span>
+  <h1>How to build a collections system that gets you paid on time</h1>
+  <div class="meta"><span>Nino Mihilli</span><span class="dot">·</span>
+  <time datetime="2026-11-13">November 13, 2026</time>
+  <span class="dot">·</span><span>5 min read</span></div>
+</div>
+<div class="wrap"><article><p>Most cash problems in a service business are not sales problems. They are collection problems.</p>
+<p>The work got done. The invoice went out. And then the money sat in a customer's approval queue for sixty days while you covered payroll out of your own line of credit. Multiply that across your customer list and you have a business financing its customers without ever deciding to.</p>
+<p>Collections is not glamorous, and most owners avoid it because it feels like confrontation. It does not have to be. A good collections system is mostly boring, polite, and consistent. Here is how I would build one.</p>
+<h2>Start before the work starts</h2>
+<p>The best collection call is the one you never have to make. That starts with what you agree to at the beginning.</p>
+<p>Before you take on a new customer, settle:</p>
+<ul><li><strong>Payment terms in writing.</strong> Net 15, net 30, whatever you choose, it should be in the signed agreement, not just on the invoice.</li><li><strong>Who approves and pays invoices.</strong> Get the name and email of the person in accounts payable, not just your operational contact.</li><li><strong>What the invoice must include.</strong> Many larger customers reject invoices without a purchase order number, a specific reference, or a particular format. Find out before your first invoice gets stuck.</li><li><strong>What happens when payment is late.</strong> Late fees or service holds are only enforceable and fair if they were agreed in advance. Have your attorney review that language.</li><li><strong>A credit check for large accounts.</strong> If a customer will owe you a meaningful amount at any given time, it is reasonable to understand their payment history first.</li></ul>
+<h2>Invoice fast and accurately</h2>
+<p>Every day between finishing the work and sending the invoice is a day added to your collection cycle.</p>
+<p>Practical rules:</p>
+<ol><li>Invoice the same day work is completed or on a fixed schedule, such as every Monday for the prior week</li><li>Make invoices easy to approve: clear description, dates, quantities, rates, and the customer's reference numbers</li><li>Offer electronic payment options so paying you is the easiest item on their desk</li><li>Send invoices to the accounts payable contact, with your operational contact copied</li></ol>
+<p>An invoice with an error does not just delay payment. It resets the clock, because the customer will wait for the corrected version.</p>
+<h2>Run a weekly aging review</h2>
+<p>Once a week, on the same day, pull your accounts receivable aging report. It shows every open invoice grouped by how long it has been outstanding: current, 1 to 30 days past due, 31 to 60, 61 to 90, and over 90.</p>
+<p>Look at three things:</p>
+<ul><li><strong>Total past due</strong>, and whether it is growing week over week</li><li><strong>The largest individual balances</strong>, because a few customers usually make up most of the risk</li><li><strong>Anything that just moved into a new bucket</strong>, because that is when follow-up should happen</li></ul>
+<p>This fits naturally into a weekly KPI review. Days sales outstanding — roughly, how many days of revenue are sitting in receivables — is one of the most useful numbers an owner can watch.</p>
+<h2>Use a set follow-up cadence</h2>
+<p>The mistake I see most is follow-up that depends on someone remembering. Make it a schedule instead. A simple version:</p>
+<ul><li><strong>A few days before due date:</strong> A friendly reminder with the invoice attached</li><li><strong>1 day past due:</strong> A short note confirming they received it and asking when to expect payment</li><li><strong>7 days past due:</strong> A phone call to the accounts payable contact</li><li><strong>15 days past due:</strong> A call to your operational contact, asking them to help move it through</li><li><strong>30 days past due:</strong> Owner-to-owner or manager-to-manager conversation about the account</li><li><strong>45 to 60 days past due:</strong> Decide on next steps — a payment plan, a pause in new work, or outside help</li></ul>
+<p>Keep notes on every contact: who you spoke with, what they said, and when they promised payment. A promise date is the most valuable piece of information in collections, because it tells you when to follow up next.</p>
+<h2>Separate collections from the relationship — carefully</h2>
+<p>Your account manager or field supervisor has a relationship with the customer and may be reluctant to talk about money. That is understandable, but it means collections slips.</p>
+<p>A good structure:</p>
+<ul><li>An office or finance person owns the routine follow-up</li><li>The relationship owner gets involved at a defined point, not at their discretion</li><li>The owner gets involved on any account above a certain balance or age</li></ul>
+<p>Everyone should understand that collecting on time is part of serving the customer well. A customer who runs up a large past-due balance and then gets cut off is worse for the relationship than one who was reminded early.</p>
+<h2>Know when to stop extending credit</h2>
+<p>Every business needs a written line: at what point do you stop doing new work for a customer who has not paid for old work?</p>
+<p>That line depends on your margins and your cash position. What matters is that it exists before you need it. Without it, owners keep working for customers who are not paying, hoping the next invoice will fix the last one.</p>
+<p>Signs an account needs a harder conversation:</p>
+<ul><li>Promise dates that keep getting missed</li><li>Partial payments that never catch up</li><li>New disputes that appear only after you ask for payment</li><li>A customer who asks for more work while a large balance is past due</li></ul>
+<h2>Reward the behavior you want</h2>
+<p>Collections is not only about chasing late payers. Some businesses offer a modest early-payment discount on large invoices, or prioritize scheduling for customers who pay reliably. Talk through the cost with your CPA or financial advisor before offering discounts — they are real money.</p>
+<h2>A collections system checklist</h2>
+<ul><li>Payment terms in every signed agreement</li><li>Accounts payable contact on file for every customer</li><li>Invoices sent within one business day or on a fixed weekly schedule</li><li>Weekly aging review on the calendar</li><li>Written follow-up cadence with assigned owners</li><li>Contact notes and promise dates logged for every past-due account</li><li>A written credit limit and stop-work rule</li><li>Days sales outstanding tracked weekly</li></ul>
+<h2>The real reason it matters</h2>
+<p>When customers pay late, the people who feel it first are usually your employees and your vendors, not you. Collecting what you have earned, on the terms you agreed, is part of keeping your promises to them. In staffing, where payroll goes out every week regardless of when customers pay, receivables discipline is not optional, and the same is true in most service businesses.</p>
+<p>If your receivables keep growing faster than your revenue, <a href="https://calendly.com/ninomihilli">book an Executive Strategy Hour</a> and we will work through your aging report together.</p></article>
+<div class="tags"><span class="tag">Accounts Receivable</span><span class="tag">Cash Flow</span><span class="tag">Operations</span></div>
+<div class="bio"><div class="av">NM</div>
+        <div><b>Nino Mihilli</b><p>Founder and operator from Phoenix, Arizona. Twenty years building and scaling businesses across staffing, telecom, insurance and software. Vice-Chairperson of the Salvation Army Kroc Center Phoenix advisory council. <a href="https://www.ninomihilli.com">www.ninomihilli.com</a></p></div></div>
+<div class="cta"><h2>Want a second set of eyes on your business?</h2><p>Book an Executive Strategy Hour: one focused hour on scaling, operations, cash flow, deals or technology, with written follow-up and action items.</p>
+      <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a></div>
+      <a class="backlink" href="https://insights.ninomihilli.com/blog/">← All insights</a></div>
+</main>
+<footer><div class="foot">
+  <div>© 2026 Nino Mihilli · T47 Group · Phoenix, AZ</div>
+  <div><a href="https://www.ninomihilli.com/">ninomihilli.com</a> · <a href="https://calendly.com/ninomihilli">Strategy Hour</a> · <a href="https://t47group.com/">T47 Group</a> · <a href="https://www.linkedin.com/in/ninomihilli/">LinkedIn</a></div>
+</div></footer>
+</body>
+</html>
