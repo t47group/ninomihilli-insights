@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to calculate your break-even point (and why it moves every year) — Nino Mihilli</title>
+<meta name="description" content="A plain-language guide to break-even analysis for small businesses: fixed costs, contribution margin, a worked example, and how to use the number in pricing and hiring." />
+<link rel="canonical" href="https://insights.ninomihilli.com/blog/break-even-analysis/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to calculate your break-even point (and why it moves every year) — Nino Mihilli" />
+<meta property="og:description" content="A plain-language guide to break-even analysis for small businesses: fixed costs, contribution margin, a worked example, and how to use the number in pricing and hiring." />
+<meta property="og:url" content="https://insights.ninomihilli.com/blog/break-even-analysis/" />
+<meta property="og:site_name" content="Nino Mihilli" />
+<meta property="og:image" content="https://insights.ninomihilli.com/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://insights.ninomihilli.com/og-image.png" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="twitter:title" content="How to calculate your break-even point (and why it moves every year) — Nino Mihilli" />
+<meta name="twitter:description" content="A plain-language guide to break-even analysis for small businesses: fixed costs, contribution margin, a worked example, and how to use the number in pricing and hiring." />
+<link rel="alternate" type="application/rss+xml" title="Nino Mihilli — Insights" href="https://insights.ninomihilli.com/rss.xml" />
+<style>:root{--bg:#08090D;--bg2:#0C0E14;--ink:#EDEEF2;--muted:#9CA0AD;--faint:#61656F;--line:#20232E;--card:rgba(255,255,255,.03);--accent:#5B7CFA;--accent2:#7B9CFF;--prose:#C9CCD6;--serif:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;
+background-image:radial-gradient(900px 520px at 82% -12%, rgba(91,124,250,.16), transparent 62%),radial-gradient(760px 520px at -5% 8%, rgba(210,166,75,.06), transparent 58%);background-attachment:fixed}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:0 26px}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(10px);background:rgba(8,9,13,.78);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1120px;margin:0 auto;padding:0 26px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px;font-size:17px}
+.logo{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:15px;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;margin-top:2px}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{color:var(--muted);font-size:14.5px;font-weight:600;transition:color .15s}
+nav.links a:hover{color:var(--ink)}
+nav.links a.on{color:var(--ink)}
+nav.links a.btn,nav.links a.btn:hover{color:#ffffff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:700;font-size:14px;background:linear-gradient(135deg,#7B9CFF,#5B7CFA);color:#ffffff;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(91,124,250,.35)}
+@media(max-width:760px){nav.links a:not(.btn){display:none}}
+.phead{padding:74px 0 34px;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:18px;display:block}
+h1{font-family:var(--serif);font-size:clamp(30px,5vw,48px);line-height:1.1;font-weight:700;letter-spacing:-.5px;margin-bottom:18px}
+.meta{color:var(--faint);font-size:13.5px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.meta .dot{opacity:.5}
+article{padding:38px 0 20px;font-size:17px}
+article p{margin-bottom:22px;color:var(--prose)}
+article h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,29px);font-weight:700;letter-spacing:-.3px;margin:42px 0 16px}
+article h3{font-size:19px;font-weight:800;margin:30px 0 12px}
+article ul,article ol{margin:0 0 22px 22px;color:var(--prose)}
+article li{margin-bottom:9px}
+article a{color:var(--accent2);border-bottom:1px solid var(--line)}
+article a:hover{border-bottom-color:var(--accent2)}
+article blockquote{border-left:3px solid var(--accent);padding:4px 0 4px 20px;margin:0 0 22px;color:var(--muted);font-style:italic}
+article code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:14.5px}
+article hr{border:none;border-top:1px solid var(--line);margin:34px 0}
+article strong{color:var(--ink)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 0}
+.tag{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:38px 0 0}
+.bio .av{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--serif);font-weight:700;color:#ffffff;background:linear-gradient(135deg,#7B9CFF,#5B7CFA)}
+.bio b{font-size:15px}
+.bio p{color:var(--muted);font-size:14px;margin:5px 0 0}
+.bio a{color:var(--accent2)}
+.postlist{padding:14px 0 40px}
+.item{display:block;border-bottom:1px solid var(--line);padding:26px 0;transition:opacity .15s}
+.item:hover{opacity:.82}
+.item .d{font-size:12.5px;color:var(--faint);letter-spacing:.4px;margin-bottom:9px}
+.item h2{font-family:var(--serif);font-size:clamp(20px,3vw,26px);font-weight:700;letter-spacing:-.3px;margin-bottom:9px}
+.item p{color:var(--muted);font-size:15px}
+.item .more{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--accent2)}
+.cta{text-align:center;background:linear-gradient(180deg,rgba(91,124,250,.10),transparent);border:1px solid var(--line);border-radius:22px;padding:46px 28px;margin:46px 0}
+.cta h2{font-family:var(--serif);font-size:clamp(23px,3.6vw,31px);font-weight:700;margin-bottom:11px}
+.cta p{color:var(--muted);max-width:52ch;margin:0 auto 22px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:32px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13.5px;max-width:1120px;margin:0 auto;padding:0 26px}
+.foot a{color:var(--muted)} .foot a:hover{color:var(--ink)}
+.backlink{display:inline-block;margin:26px 0 0;font-size:14px;color:var(--muted);font-weight:600}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "headline": "How to calculate your break-even point (and why it moves every year)", "description": "A plain-language guide to break-even analysis for small businesses: fixed costs, contribution margin, a worked example, and how to use the number in pricing and hiring.", "datePublished": "2026-11-27", "dateModified": "2026-11-27", "url": "https://insights.ninomihilli.com/blog/break-even-analysis/", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://insights.ninomihilli.com/blog/break-even-analysis/"}, "author": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}, "publisher": {"@type": "Organization", "@id": "https://insights.ninomihilli.com/#org", "name": "Nino Mihilli", "url": "https://insights.ninomihilli.com/", "logo": "https://insights.ninomihilli.com/apple-touch-icon.png", "founder": {"@type": "Person", "@id": "https://www.ninomihilli.com/#person", "name": "Nino Mihilli", "url": "https://www.ninomihilli.com", "jobTitle": "Founder, T47 Group", "sameAs": ["https://www.ninomihilli.com/", "https://www.linkedin.com/in/ninomihilli", "https://www.instagram.com/ninomihilli/", "https://www.facebook.com/ninomihilli/", "https://www.facebook.com/ninomihilli10/", "https://x.com/NinoMihilli", "https://medium.com/@nino.mihilli_12552", "https://www.amazon.com/stores/author/B005E3OCH0", "https://about.me/ninomihilli", "https://500px.com/ninomihillientrepreur", "https://theorg.com/org/front-line-all-temps-llc/person/nino-mihilli", "https://krocphoenix.org/kroc-phoenix/advisory-board-members/", "https://t47group.com/", "https://xsatorilabs.net/", "https://nmwwd.org/", "https://www.flatstaffing.com/", "https://www.youtube.com/@ninomihilli", "https://ninomihilli.substack.com/"], "memberOf": {"@type": "OrganizationRole", "roleName": "Advisory Council Vice-Chairperson", "memberOf": {"@type": "Organization", "name": "The Salvation Army Kroc Center Phoenix", "url": "https://krocphoenix.org/"}}}}, "keywords": "Break-Even Analysis, Margins, Financial Planning", "inLanguage": "en-US"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://insights.ninomihilli.com/"}, {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://insights.ninomihilli.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to calculate your break-even point (and why it moves every year)", "item": "https://insights.ninomihilli.com/blog/break-even-analysis/"}]}]}</script>
+</head>
+<body>
+<header><div class="nav">
+  <a class="brand" href="https://www.ninomihilli.com/">
+    <div class="logo">NM</div>
+    <div>Nino Mihilli <small>Insights</small></div>
+  </a>
+  <nav class="links">
+    <a href="https://www.ninomihilli.com/">Home</a><a href="https://www.ninomihilli.com/#about">About</a><a href="https://www.ninomihilli.com/#ventures">Ventures</a><a href="https://www.ninomihilli.com/blog">Blog</a>
+    <a class="on" href="https://insights.ninomihilli.com/blog/">Insights</a>
+    <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a>
+  </nav>
+</div></header>
+<main>
+<div class="wrap phead">
+  <span class="kicker">Finance</span>
+  <h1>How to calculate your break-even point (and why it moves every year)</h1>
+  <div class="meta"><span>Nino Mihilli</span><span class="dot">·</span>
+  <time datetime="2026-11-27">November 27, 2026</time>
+  <span class="dot">·</span><span>4 min read</span></div>
+</div>
+<div class="wrap"><article><p>Ask an owner how much revenue the business needs each month just to keep the lights on, and you will often get a pause.</p>
+<p>That number — the break-even point — is one of the most useful figures in a small business. It tells you how much room you have when sales slow down, how much risk a new hire or a new lease adds, and whether a discount actually makes sense. And most owners have never calculated it.</p>
+<p>It is not complicated. Here is how to do it, and how to use it.</p>
+<h2>The three pieces you need</h2>
+<p><strong>1. Fixed costs.</strong> Costs that stay roughly the same regardless of how much you sell in a given month. Typical examples:</p>
+<ul><li>Rent and occupancy</li><li>Salaried staff and management</li><li>Insurance</li><li>Software and subscriptions</li><li>Loan payments (the interest portion is an expense; your CPA can help separate principal for accounting purposes)</li><li>Owner salary</li><li>Accounting, legal, and other professional fees</li></ul>
+<p><strong>2. Variable costs.</strong> Costs that rise and fall directly with sales:</p>
+<ul><li>Hourly labor tied to delivering the work</li><li>Materials and cost of goods</li><li>Payment processing fees</li><li>Sales commissions</li><li>Subcontractors</li></ul>
+<p><strong>3. Contribution margin.</strong> What is left from each dollar of revenue after variable costs. This is the money available to cover fixed costs and then produce profit.</p>
+<blockquote><p>Contribution margin ratio = (Revenue - Variable costs) ÷ Revenue</p></blockquote>
+<h2>The formula</h2>
+<blockquote><p>Break-even revenue = Fixed costs ÷ Contribution margin ratio</p></blockquote>
+<p>That is it. The result is the revenue you need to cover every fixed cost with nothing left over.</p>
+<h2>A worked example</h2>
+<p>Here is a simple hypothetical service business, for illustration only.</p>
+<ul><li>Monthly fixed costs: $60,000</li><li>Revenue last month: $200,000</li><li>Variable costs last month: $140,000</li></ul>
+<p>Contribution margin = $200,000 - $140,000 = $60,000</p>
+<p>Contribution margin ratio = $60,000 ÷ $200,000 = 30%</p>
+<p>Break-even revenue = $60,000 ÷ 0.30 = $200,000 per month</p>
+<p>In this example, the business is exactly at break-even. Every dollar of revenue above $200,000 contributes 30 cents toward profit. Every dollar below it costs 30 cents.</p>
+<p>That is a sobering picture, and it is more common than owners think. A business can look busy and still be operating right at the edge.</p>
+<h2>What the number tells you</h2>
+<p>Once you know break-even, several decisions get clearer.</p>
+<p><strong>Your margin of safety.</strong> Compare current revenue to break-even:</p>
+<blockquote><p>Margin of safety = (Current revenue - Break-even revenue) ÷ Current revenue</p></blockquote>
+<p>If you are 25% above break-even, a 10% drop in sales hurts but does not threaten the business. If you are 5% above, the same drop puts you underwater.</p>
+<p><strong>The real cost of a new fixed expense.</strong> Suppose you want to add a $6,000-per-month manager. At a 30% contribution margin, you need $20,000 more in monthly revenue just to pay for that role. That does not mean you should not hire. It means you should know what the hire has to make possible.</p>
+<p><strong>The real cost of a discount.</strong> If you cut price 5% on work with a 30% contribution margin, you lose a sixth of your contribution on that work. You would need significantly more volume to end up in the same place. Discounts hurt thin-margin businesses far more than they look.</p>
+<p><strong>The value of improving margin.</strong> Raising contribution margin from 30% to 33% in the example lowers break-even from $200,000 to about $182,000. Small improvements in pricing or variable costs move break-even more than most owners expect.</p>
+<h2>Why it moves every year</h2>
+<p>Break-even is not a number you calculate once. It moves whenever:</p>
+<ul><li>Wages, insurance, or benefits rise</li><li>You add staff, space, or software</li><li>Your pricing changes, or customers negotiate discounts</li><li>Your mix of work shifts toward lower- or higher-margin services</li><li>Interest rates change your debt costs</li></ul>
+<p>That is why year end is a good time to recalculate. Before you finalize your plan for next year, rebuild break-even using next year's expected costs and prices, not last year's.</p>
+<h2>Common mistakes</h2>
+<ul><li><strong>Treating all labor as fixed or all labor as variable.</strong> Be honest about which labor actually flexes with volume.</li><li><strong>Forgetting the owner's salary.</strong> If the business only breaks even because the owner takes nothing, it does not really break even.</li><li><strong>Ignoring debt service.</strong> Loan payments are real cash obligations even when only part of them shows on the P&amp;L.</li><li><strong>Using a single month.</strong> Use an average of several months, or annual figures divided by twelve, to smooth out timing.</li><li><strong>Blending very different services.</strong> If you have service lines with very different margins, calculate contribution margin for each.</li></ul>
+<h2>A cash break-even, too</h2>
+<p>The accounting break-even above is based on the P&amp;L. For planning, also consider a cash version: what monthly collections do you need to cover payroll, rent, debt payments, taxes, and other cash outflows? That number belongs next to your 13-week cash flow forecast.</p>
+<h2>Your break-even worksheet</h2>
+<ol><li>List fixed monthly costs, including owner salary</li><li>List variable costs as a percentage of revenue</li><li>Calculate contribution margin ratio</li><li>Divide fixed costs by contribution margin ratio</li><li>Calculate your margin of safety</li><li>Repeat with next year's expected costs and prices</li><li>Recalculate whenever you add a major fixed cost</li></ol>
+<h2>Knowing where the line is</h2>
+<p>There is real peace in knowing exactly where the line is. Owners who know their break-even worry less, because they are not guessing. They can say yes to a hire or no to a discount with confidence, and they can see trouble coming while there is still time to respond. It is one of the first numbers I work through with owners in strategy sessions.</p>
+<p>If you want help building your break-even analysis into next year's plan, <a href="https://calendly.com/ninomihilli">book an Executive Strategy Hour</a>.</p></article>
+<div class="tags"><span class="tag">Break-Even Analysis</span><span class="tag">Margins</span><span class="tag">Financial Planning</span></div>
+<div class="bio"><div class="av">NM</div>
+        <div><b>Nino Mihilli</b><p>Founder and operator from Phoenix, Arizona. Twenty years building and scaling businesses across staffing, telecom, insurance and software. Vice-Chairperson of the Salvation Army Kroc Center Phoenix advisory council. <a href="https://www.ninomihilli.com">www.ninomihilli.com</a></p></div></div>
+<div class="cta"><h2>Want a second set of eyes on your business?</h2><p>Book an Executive Strategy Hour: one focused hour on scaling, operations, cash flow, deals or technology, with written follow-up and action items.</p>
+      <a class="btn" href="https://calendly.com/ninomihilli">Book a Strategy Hour</a></div>
+      <a class="backlink" href="https://insights.ninomihilli.com/blog/">← All insights</a></div>
+</main>
+<footer><div class="foot">
+  <div>© 2026 Nino Mihilli · T47 Group · Phoenix, AZ</div>
+  <div><a href="https://www.ninomihilli.com/">ninomihilli.com</a> · <a href="https://calendly.com/ninomihilli">Strategy Hour</a> · <a href="https://t47group.com/">T47 Group</a> · <a href="https://www.linkedin.com/in/ninomihilli/">LinkedIn</a></div>
+</div></footer>
+</body>
+</html>
